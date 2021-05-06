@@ -1,3 +1,4 @@
+# What's today?
 day = int(input('Day (0-6)? '))
 
 if day == 0:
@@ -17,7 +18,8 @@ elif day == 6:
 else:
     print('Please type a number 0-6.')
 
+# Do I have to work today?
 if day >= 1 and day <= 5:
     print('It\'s a weekday. Time to go to work.')
-if day == 0 or day == 6:
+elif day == 0 or day == 6:
     print('It\'s the weekend! You\'re free to sleep-in.')
